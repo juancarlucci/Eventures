@@ -6,8 +6,16 @@
 
 
 To view: clone this repo.
-On the terminal run: rails server
-You will be able to create a new user. Click on the profile tab to see events. Click on the + "plus" circle next to any event to add events to your personal list.
+
+On the terminal run: rails server.
+
+You will be able to create a new user.
+ 
+Click on the profile tab to see events.
+
+Click on the + "plus" circle next to any event to add events to your personal list.
+
+
 ![image of app, Eventures-profile](readme-assets/eventure-profile.png "Eventures")
 
 
