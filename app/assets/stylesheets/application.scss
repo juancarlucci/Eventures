@@ -1,0 +1,113 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+*= require material_icons
+ */
+
+@import "materialize";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+*{
+  font-family: 'Josefin Sans';
+}
+h1,h2,h3,h4,h5,h6{
+  text-transform: uppercase;
+}
+img{
+  width: 100%;
+}
+nav{
+  position: fixed;
+  z-index: 1;
+}
+.card-panel{
+  margin-top: 0;
+}
+#info, aside{
+  height: 480px;
+  overflow-y: scroll;
+}
+.carousel{
+  height: 600px;
+  margin-bottom: 300px;
+  overflow: visible;
+}
+.carousel-item p{
+  width: 200px;
+}
+.background{
+  background-image: url("pablo-unsplash.png");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+}
+footer{
+  // position: fixed;
+  // bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  // z-index: 1;
+
+}
+footer p{
+  margin: 0 auto;
+}
+.log-in{
+  margin: 5em;
+  padding: 20px;
+}
+.sidebyside{
+  display: inline-block;
+}
+
+.myevents{
+  overflow-y: scroll;
+  height: 480px;
+}
+#event_list .event-row, .row .event-row{
+  margin-left: 0;
+}
+.inline-button{
+  display: inline-block;
+}
+#contact-us{
+  height: 400px;
+  margin-bottom: 0;
+}
+.event-page{
+  font-size: 20px;
+  height: 500px;
+  overflow-y: scroll;
+}
+.intro{
+  font-size: 2.2em;
+}
+#info p{
+  font-size: 1.2em;
+}
+main{
+  padding-top: 65px;
+}
+.image-background{
+  margin-left: 20px;
+}
+.event-image{
+  width: 50%;
+}
+.log-in #login{
+  width: 30%;
+  margin: 0 33%;
+}
+#show-main{
+  padding-top: 25px;
+}

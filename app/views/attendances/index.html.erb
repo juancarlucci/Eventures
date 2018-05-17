@@ -1,0 +1,13 @@
+<div><%= @user.first_name %> is attending the following event</div>
+
+<ul>
+  <% @events.each do |event| %>
+  <div>
+    <h3><%= event.name %></h3>
+    <% if current_user %>
+      <%= button_to "Join", attendance_path(event) %>
+    <% end %>
+  </div>
+  <br>
+<% end %>
+</ul>

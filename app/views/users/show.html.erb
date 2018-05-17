@@ -1,0 +1,54 @@
+
+<div class="header">
+  <h4>Welcome, <%= @user.first_name %></h4>
+
+</div>
+
+<main class="row" id = "show-main">
+  <div class="col s4 offset-s1">
+    <div class= "myevents">
+      <h4 class="card-panel grey white-text center-align showpanel">My Events</h4>
+      <!-- Events -->
+      <div id="event_list">
+        <% @user.events.each do |event| %>
+        <div class="row event-row card-panel grey lighten-2">
+          <p class= "sidebyside col"><%= link_to event.event_name, event_path %> <%= event.event_date %></p>
+          <%= button_to "X", {:controller => :attendance, :action => 'destroy', :id => event.id }, :method => :delete, class: "btn-floating pulse grey sidebyside col" %>
+        </div>
+        <% end %>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- <div id="calendar"> -->
+    <!--Calendar  -->
+    <!-- <%= form_tag("/search", method: "get") do %>
+    <%= label_tag(:q, "Search for:") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Search") %>
+    <% end %> -->
+  <!-- </div> -->
+
+
+
+
+  <aside class="col s6 offset-s0.5">
+
+    <h4 class="card-panel grey white-text center-align showpanel">Events around town</h4>
+    <% @events.each do |event| %>
+    <div class="row event-row card-panel grey lighten-2">
+      <% random = Random.rand(1..7) %>
+      <%= image_tag("#{random}.jpg", class: "event-image col")%>
+      <p class= "sidebyside col"><%= link_to event.event_name, event %>  <%= event.event_date %></p>
+      <%= button_to "+", {:controller => :attendance, :action => 'create', :event_id => event.id }, :method => :create, class: "btn-floating pulse grey sidebyside col" %>
+
+    </div>
+    <% end %>
+
+
+
+  </aside>
+
+</main>

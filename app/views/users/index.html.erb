@@ -1,0 +1,21 @@
+
+
+<!-- <img src="assets/pablo-unsplash.jpg"> -->
+<header class="background">
+
+<% if !current_user %>
+<%= render '/users/partials/form' %>
+<% end %>
+
+</header>
+
+<div class="row valign-wrapper">
+  <p class="col s4 offset-s1 intro"><%= image_tag("logosample.jpeg")%>Eventure is an app that helps people socialize within the San Francisco Area. We provide and list the events and allow access to events. You will also be able to add the event to your calendar where you can view it on your profile. </p>
+  <div class="col s5 offset-s2">
+    <h4 class="card-panel grey darken-3 white-text center-align">Events around town</h4>
+    <div id="info"></div>
+
+  </div>
+</div>
+<%= render '/users/partials/about' %>
+<%= render '/users/partials/contact' %>
