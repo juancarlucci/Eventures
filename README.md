@@ -29,8 +29,6 @@ Discuss purpose of app
 Whiteboard basic concept
 Wire-framing
 
-[image of wireframe](https://trello.com/b/jCxRWOel/wireframe-user-page)
-
 
 ### My tasks included:
 Create Client side including User and Events models
