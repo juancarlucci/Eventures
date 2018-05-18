@@ -26,7 +26,9 @@ Ruby on Rails, API integration, brycpt, git, github, heroku, JavaScript, jQuery,
 ## Process/approach:
 
 Discuss purpose of app
+
 Whiteboard basic concept
+
 Wire-framing
 
 
